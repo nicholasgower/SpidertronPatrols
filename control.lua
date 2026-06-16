@@ -6,7 +6,7 @@ if script.active_mods["maraxsis"] or script.active_mods["lex-aircraft"] then
 end
 
 ---@type event_handler_lib
-event_handler = require "event_handler"
+local event_handler = require "event_handler_forked"
 util = require "util"
 require "scripts.utils"
 gui = require "scripts.flib-gui"
@@ -365,3 +365,6 @@ event_handler.add_libraries{
   SpidertronControl,
   WaypointRendering
 }
+
+
+
